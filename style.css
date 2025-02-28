@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "medium";
+  src: url(/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "extrabold";
+  src: url(/Gilroy-Extrabold.ttf);
+}
+body {
+  background-color: #454CA5;
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.cardbox {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-start-end-radius: 10px;
+  justify-content: space-evenly;
+  font-family: "medium";
+}
+
+.cardbox h3 label {
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  color: #777FDF;
+  padding: 8px 15px;
+}
+
+.cardbox h3 {
+  color: whitesmoke;
+  font-size: 15px;
+}
+.game {
+  border-radius: 6px;
+  min-height: 470px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #969EF7;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 5px ;
+  box-shadow: 0px 0px 20px #202120;
+}
+
+.circle {
+  border: 1px solid black;
+  margin: 4px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:#DEFA0E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "extrabold";
+  color: black;
+  box-shadow: 0px 0px 4px #141A59;
+}
+.circle:hover {
+  background: #FFF520C9;
+}
+.shuffle {
+  color: white;
+  background-color: #FA630E;
+  padding: 18px 30px;
+  border-radius: 50px;
+  margin: 20px;
+  border:none;
+  font-family: "medium";
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0px 0px 8px #FF965C;
+  cursor:pointer;
+}
+.shuffle:hover {
+  background-color:#FE7830;
+}
+
+.overlap {
+  display: none;
+  position: absolute;
+  top: 45vh;
+  left: 20vh;
+  background-color: #FEFAFF;
+  height: 240px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #35403B;
+}
+
+.final {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 240px;
+  width: 200px;
+}
+
+.final .final-btn {
+  margin-top: 25px;
+  padding: 10px 25px;
+  color: white;
+  background-color: #EB1111;
+  border:none;
+  border-radius: 50px;
+  font-family: "medium";
+  cursor: pointer;
+}
+.final-btn:hover {
+  background: #EC4B4B;
+}
+.final h2 {
+  font-family: "medium";
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .overlap {
+    top: 34vh;
+    left: 13vh;
+  }
+}
